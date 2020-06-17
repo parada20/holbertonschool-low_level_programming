@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
  * main - main function
- * Return 0
+ * Return: 0
  **/
 int main(void)
  {
-	char ch;
+	char s;
 
-	for(ch = 'a' ; ch <= 'z' ; ch++) {
-		putchar(ch);
+	for(s = 'a'; s <= 'z'; s++)
+		putchar(s);
 		putchar('\n');
-
 	return(0);
 }
