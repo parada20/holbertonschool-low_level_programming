@@ -10,9 +10,10 @@ int main(void)
 	char s;
 
 	for (s = 'a'; s <= 'z'; s++)
-		putchar(s);
-	if (s != '113' && s != '101')
-		putchar(s);
+	{
+		if (s != '113' && p != '101')
+			putchar(s);
+	}
 	putchar('\n');
 	return (0);
 }
