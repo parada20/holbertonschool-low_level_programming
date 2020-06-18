@@ -1,7 +1,7 @@
- #include "holbeton.h"
+ #include "holberton.h"
 /**
- * Main function
- * Return 0
+ * main - function main
+ * Return: return 0
  */
 int main(void)
 {
