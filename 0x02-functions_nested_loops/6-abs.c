@@ -1,22 +1,45 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- * _abs is absolute value of a number
- * Return: Always 0.
+ * print_sign - print sign of a number
+ * @n: Description of parameter n
+ * Return: return 1, return 0 and return -1
  */
-int main(void)
-{
-	int r;
 
-	r = _abs(-1);
-	printf("%d\n", r);
-	r = _abs(0);
-	printf("%d\n", r);
-	r = _abs(1);
-	printf("%d\n", r);
-	r = _abs(-98);
-	printf("%d\n", r);
-	return (0);
+int print_sign(int n)
+{
+
+	if (n > 0)
+	{
+		return (1);
+	}
+	else if (n == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (-1);
+	}
+
+}
+
+
+
+/**
+ * _abs - print the absolute value
+ * @n: Description of parameter n
+ * Return: return abs
+ */
+
+int _abs(int n)
+{
+	if (print_sign(n) == -1)
+	{
+		return (n * (-1));
+	}
+	else
+	{
+		return (n);
+	}
 }
